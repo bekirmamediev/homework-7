@@ -1,8 +1,7 @@
 .sm__list{
-    @extend .list;
-    display: flex;
-    justify-content: center;
-}
+    @extend %list;
+    @include centeredFlex();
+ }
 
 .sm__item:not(:last-child){
     margin-right: 10px;
@@ -10,9 +9,7 @@
 }
 
 .sm__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex();
 
     width: 44px;
     height: 44px;

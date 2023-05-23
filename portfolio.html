@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <div class="container main-nav">
         <nav class="main-nav">
             <a href="/" class="logo"> <span class="logo--accent">Web</span>Studio</a>
-            <ul class="main-nav__list list">
+            <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студія</a></li>
                 <li class="main-nav__item"><a class="main-nav__link main-nav__link--carent" href="./portfolio.html">Портфоліо</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="">Контакти</a></li>
@@ -28,7 +28,7 @@
 
         </nav>
 
-        <ul class="contacts list">
+        <ul class="contacts">
             <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
                     <svg class="contacts__icon">
                         <use href="./images/symbol.svg#icon-envelope"></use>
@@ -49,7 +49,7 @@
     <section class="section">
         <div class="container">
             <h1 class="section__title section__title--hidden">Портфоліо</h1>
-            <ul class="filtr list">
+            <ul class="filtr ">
                 <Li class="filtr__item"><button type="button" class="filtr__button filtr__button--carrent">Все</button></Li>
                 <Li class="filtr__item"><button type="button" class="filtr__button">Веб-сайти</button></Li>
                 <Li class="filtr__item"><button type="button" class="filtr__button">Додатки</button></Li>
@@ -57,7 +57,7 @@
                 <Li class="filtr__item"><button type="button" class="filtr__button">Маркетинг</button></Li>
             </ul>
             
-            <ul class="product__list list">
+            <ul class="product__list ">
                 <li class="product__item" >
                     <a href="" class="product__link" >
                         <div class="product__img">
@@ -232,7 +232,7 @@
             <div>
                 <a href="/" class="logo logo--white"> <span class="logo--accent">Web</span>Studio</a>
                 <address class="address">
-                    <ul class="list address__list">
+                    <ul class="address__list">
                         <li class="address__item">
                             <a class="address__link" href="https://goo.gl/maps/ZgSxbahKDa7UKCkk7">м.Київ, пр-т Лесі
                                 Українки, 26</a>
@@ -250,7 +250,7 @@
     
             <div>
                 <p class="footer__text">ПРИЄДНУЙТЕСЬ</p>
-                <ul class="sm__list list">
+                <ul class="sm__list">
                     <li class="sm__item"> <a class="sm__link sm__link--background" href="">
                             <svg class="sm__icon sm__icon--white">
                                 <use href="./images/symbol.svg#icon-instagram"></use>
@@ -281,7 +281,7 @@
                     <input class="footer-form__input" type="email" id="subscribe" placeholder="E-mail">
                 </div>
     
-                <button class="modal__btm footer-form__button " type="submit">Підписатися
+                <button class="footer-form__button " type="submit">Підписатися
                     <svg class="footer-form__icon">
                         <use href="./images/symbol.svg#icon-send"></use>
                     </svg>

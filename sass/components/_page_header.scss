@@ -1,15 +1,8 @@
-.logo{
-    color: $logo-color;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    
-    text-decoration: none;
 
-    .logo--accent{
-        color: $accent-color;
-    }
+.page-header {
+    background-color: $white-back;
+    border-bottom: 1px solid $header-border_color;
+
 }
 
 .main-nav{
@@ -18,7 +11,7 @@
 }
 
 .main-nav__list{
-    @extend .list;
+    @extend %list;
     display: flex;
     margin-left: 91px ;
 
@@ -68,7 +61,7 @@
 }
 
 .contacts{
-    @extend .list;
+    @extend %list;
     display: flex;
     margin-left: auto;
     align-items: baseline;
@@ -79,8 +72,7 @@
 }
 
 .contacts__link{
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     
     padding-top: 32px;
     padding-bottom: 32px;
@@ -113,8 +105,3 @@
     height: 16px;
 }
 
-.page-header {
-    background-color: $white-back;
-    border-bottom: 1px solid $header-border_color;
-
-}

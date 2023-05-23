@@ -1,6 +1,7 @@
 .filtr{
-    display: flex;
-    justify-content: center;
+    @extend %list;
+    @include centeredFlex();
+    
 }
 
 .filtr__item:not(:last-child){
@@ -10,7 +11,7 @@
 .filtr__button{
     padding: 6px 22px;
     color: $title-text-color;
-    background-color: var(--gray-back);
+    background-color: $gray-back;
     
     font: inherit;
     font-weight: 500;

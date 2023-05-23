@@ -1,5 +1,5 @@
 .advantages-list{
-    @extend .list;
+    @extend %list;
     display: flex;
 }
 
@@ -8,9 +8,7 @@
 }
 
 .advantages-list__svg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centeredFlex();
         
         width: 270px;
         height: 120px;

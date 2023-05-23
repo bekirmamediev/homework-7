@@ -37,10 +37,8 @@
 }    
     
 
-
-
 .footer-form__button{
-    @extend .button;
+    @extend %button;
     position: relative;
     width: 200px;
     padding-left: 28px;

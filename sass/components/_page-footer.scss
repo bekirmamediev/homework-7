@@ -7,19 +7,17 @@
 
 .footer--horizontal{
     display: flex;
-    
     align-items: baseline;
 
-}
-
-.logo--white{
-    @extend .logo;
-    color: $white-back;
 }
 
 .address{
     margin-top: 20px;
     margin-right: 70px;
+}
+
+.address__list{
+    @extend %list;
 }
 
 .address__item:not(:last-child){

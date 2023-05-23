@@ -1,5 +1,5 @@
 .client__list{
-    @extend .list;
+    @extend %list;
     display: flex;
 }
 
@@ -8,9 +8,7 @@
 }
 
 .client__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex();
 
     width: 170px;
     height: 92px;

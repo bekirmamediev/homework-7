@@ -4,7 +4,7 @@
 }
 
 .team__list{
-    @extend .list;
+    @extend %list;
     display: flex;
 }
 
